@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-07-battle-ship",
+  "version": "1.0.0",
+  "description": "A simple game of battle ship",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakovid/Portfolio-07-Battle-Ship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakovid/Portfolio-07-Battle-Ship/issues"
+  },
+  "homepage": "https://github.com/jakovid/Portfolio-07-Battle-Ship#readme",
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
+}
