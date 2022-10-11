@@ -6,8 +6,11 @@ function buildGameBoard(boardType, domDestination) {
         //add class
         gameSquare.classList = 'gameSquare';
 
+        //add value
+        gameSquare.value = i;
+
         //event listeners
-        if (boardType == 'player') {
+        if (boardType == 'playerOne') {
             //player
         } else {
             //computer
