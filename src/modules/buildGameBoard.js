@@ -1,23 +1,26 @@
+import { playerGameBoardInfo } from "./playerGameBoardInfo";
+import { computerGameBoardInfo } from "./computerGameBoardInfo";
+
 function buildGameBoard(boardType, domDestination) {
-    for (let i = 0; i < 100; i++) {
-        //create element
-        let gameSquare = document.createElement('div');
+    let gameBoardValues = (boardType == 'player' ? playerGameBoardInfo : computerGameBoardInfo);
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 10; j++) {
+            //create element
+            let gameSquare = document.createElement('div');
 
-        //add class
-        gameSquare.classList = 'gameSquare';
+            //add value
+            gameSquare.innerHTML = gameBoardValues[i][j];
 
-        //add value
-        gameSquare.value = i;
+            //event listeners
+            if (boardType == 'computer') {
+                gameSquare.classList = 'gameSquare computerSquare';
+            } else {
+                gameSquare.classList = 'gameSquare playerSquare';
+            }
 
-        //event listeners
-        if (boardType == 'playerOne') {
-            //player
-        } else {
-            //computer
+            //append
+            domDestination.append(gameSquare);
         }
-
-        //append
-        domDestination.append(gameSquare);
     }
 }
 
