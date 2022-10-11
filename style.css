@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+#battleshipMain {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0.15rem;
+    padding: 0.15rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+}
+
+.gameSquare {
+    background-color: white;
+}
