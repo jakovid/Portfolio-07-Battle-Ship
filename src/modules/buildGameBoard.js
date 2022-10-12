@@ -8,15 +8,17 @@ function buildGameBoard(boardType, domDestination) {
             //create element
             let gameSquare = document.createElement('div');
 
-            //add value
-            gameSquare.innerHTML = gameBoardValues[i][j];
-
             //event listeners
             if (boardType == 'computer') {
                 gameSquare.classList = 'gameSquare computerSquare';
             } else {
                 gameSquare.classList = 'gameSquare playerSquare';
             }
+
+            //add special class
+            if (gameBoardValues[i][j] === 's' && boardType == 'player') {
+                gameSquare.classList.add('shipSquare');
+            };
 
             //append
             domDestination.append(gameSquare);

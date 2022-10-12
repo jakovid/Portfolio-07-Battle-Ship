@@ -31,6 +31,10 @@
     background-color: white;
 }
 
+.shipSquare {
+    background-color: slategray;
+}
+
 .computerSquare:hover {
     background-color: darkgray;
     cursor: pointer;
