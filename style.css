@@ -28,11 +28,19 @@
 }
 
 .gameSquare {
-    background-color: white;
+    background-color: lightblue;
 }
 
 .shipSquare {
-    background-color: slategray;
+    background-color: black;
+}
+
+.hitSquare {
+    background-color: red;
+}
+
+.missSquare {
+    background-color: white;
 }
 
 .computerSquare:hover {
